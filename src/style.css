@@ -1,0 +1,44 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Syne+Mono&display=swap");
+
+:root {
+  --dark: #1e1e1e;
+  --light: #ffffff;
+}
+
+body {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background: var(--light);
+  font-family: "Syne Mono", monospace;
+}
+
+main {
+  flex: 1 1 0;
+  display: flex;
+  padding: 32px;
+}
+
+h1 {
+  display: flex;
+  gap: 32px;
+  margin: auto;
+  font-size: 64px;
+  color: var(--dark);
+}
+
+aside {
+  flex: none;
+  display: flex;
+  justify-content: center;
+  gap: 32px;
+  padding: 32px;
+}
+
+button {
+  border-bottom: 2px solid transparent;
+}
+
+button.active {
+  border-color: var(--dark);
+}
